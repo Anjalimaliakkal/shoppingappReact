@@ -3,7 +3,9 @@ import './App.css';
 import AddProduct from './components/AddProduct';
 import SearchProduct from './components/SearchProduct';
 import DeleteProduct from './components/DeleteProduct';
+import Dynamic from './components/Dynamic';
 import ViewAll from './components/ViewAll';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
      <Route path='/search' element={<SearchProduct/>}/>
      <Route path='/delete' element={<DeleteProduct/>}/>
      <Route path='/viewAll' element={<ViewAll/>}/>
+     <Route path='/Dynamic'element={<Dynamic/>}/>
     </Routes>
     </BrowserRouter>
   );
